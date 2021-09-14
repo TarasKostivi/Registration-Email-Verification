@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class RegistrationService {
 
     private final AppUserService appUserService;
-    private EmailValidator emailValidator;
+    private final EmailValidator emailValidator;
 
     public String register(RegistrationRequest request) {
         boolean isValidEmail = emailValidator.
